@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "author": "Uri Shaked",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -120,
+      "left": 201.98,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": -120,
+      "left": 179.54,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": -120,
+      "left": 157.1,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": -122.06,
+      "left": 98.02,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": 44,
+      "left": 248.95,
+      "rotate": 270,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot2",
+      "top": 44,
+      "left": 349.72,
+      "rotate": 270,
+      "attrs": { "travelLength": "30" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot3",
+      "top": 44,
+      "left": 458.95,
+      "rotate": 270,
+      "attrs": { "travelLength": "30" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot4", "top": 147.96, "left": 681, "attrs": {} }
+  ],
+  "connections": [
+    [ "led1:A", "uno:3", "orange", [ "v26", "h-5" ] ],
+    [ "led2:A", "uno:5", "green", [ "v15", "h6" ] ],
+    [ "led3:A", "uno:6", "blue", [ "v19", "h22" ] ],
+    [ "uno:GND.1", "led3:C", "black", [ "v-56", "h59" ] ],
+    [ "led3:C", "led2:C", "black", [ "v10", "h24" ] ],
+    [ "led2:C", "led1:C", "black", [ "v10", "h19" ] ],
+    [ "uno:GND.1", "rgb1:COM", "black", [ "v-50", "h15" ] ],
+    [ "rgb1:G", "uno:5", "green", [ "v42", "h77" ] ],
+    [ "rgb1:B", "uno:6", "blue", [ "v40", "h57" ] ],
+    [ "rgb1:R", "uno:3", "orange", [ "v52", "h121" ] ],
+    [ "pot1:SIG", "uno:A2", "blue", [ "v8", "h0" ] ],
+    [ "pot2:SIG", "uno:A1", "green", [ "v12", "h0" ] ],
+    [ "pot3:SIG", "uno:A0", "orange", [ "v16", "h0" ] ],
+    [ "pot1:VCC", "uno:VIN", "red", [ "v20", "h0" ] ],
+    [ "pot2:VCC", "pot1:VCC", "red", [ "v20", "h0" ] ],
+    [ "pot3:VCC", "pot2:VCC", "red", [ "v20", "h0" ] ],
+    [ "pot2:GND", "pot1:GND", "black", [ "v-16", "h-88" ] ],
+    [ "pot3:GND", "pot2:GND", "black", [ "v-16", "h-92" ] ],
+    [ "pot1:GND", "uno:GND.1", "black", [ "v-16", "h-222" ] ],
+    [ "pot1:VCC", "pot4:VCC", "red", [ "v77.74", "h475.08" ] ],
+    [ "pot4:SIG", "pot1:SIG", "green", [ "v52.74", "h-471.88" ] ],
+    [ "pot4:GND", "pot3:GND", "black", [ "v24.11", "h-40.48", "v-256.21", "h-121.07" ] ]
+  ],
+  "dependencies": {}
+}
