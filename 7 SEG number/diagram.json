@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -137.4, "left": -16.4, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 115.8, "left": 9, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -71.82,
+      "left": 120.28,
+      "attrs": { "common": "cathode" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.1", "bb1:tn.1", "black", [ "v-28.4", "h-188.17", "v-210.67", "h14.67" ] ],
+    [ "bb1:15t.a", "bb1:tn.12", "green", [ "v0" ] ],
+    [ "sevseg1:COM.1", "bb1:15b.h", "", [ "$bb" ] ],
+    [ "sevseg1:COM.2", "bb1:15t.c", "", [ "$bb" ] ],
+    [ "sevseg1:A", "bb1:16t.c", "", [ "$bb" ] ],
+    [ "sevseg1:B", "bb1:17t.c", "", [ "$bb" ] ],
+    [ "sevseg1:C", "bb1:16b.h", "", [ "$bb" ] ],
+    [ "sevseg1:D", "bb1:14b.h", "", [ "$bb" ] ],
+    [ "sevseg1:E", "bb1:13b.h", "", [ "$bb" ] ],
+    [ "sevseg1:F", "bb1:14t.c", "", [ "$bb" ] ],
+    [ "sevseg1:G", "bb1:13t.c", "", [ "$bb" ] ],
+    [ "sevseg1:DP", "bb1:17b.h", "", [ "$bb" ] ],
+    [ "sevseg1:A", "uno:2", "green", [ "v-33.91", "h96.12", "v-2.39" ] ],
+    [ "sevseg1:B", "uno:3", "green", [ "v-27.33", "h75.16", "v-0.6" ] ],
+    [ "sevseg1:DP", "uno:9", "green", [ "v103.7", "h5.22" ] ],
+    [ "sevseg1:C", "uno:4", "green", [ "v30.76", "h74" ] ],
+    [ "sevseg1:D", "uno:5", "green", [ "v73.21", "h85.43" ] ],
+    [ "sevseg1:E", "uno:6", "green", [ "v104.29", "h86.07" ] ],
+    [ "sevseg1:G", "uno:8", "green", [ "v0.16", "h-152.46", "v151.25", "h202.06" ] ],
+    [ "sevseg1:F", "uno:7", "green", [ "v-32.12", "h-172.23", "v188.91", "h233.15", "v1.2" ] ]
+  ],
+  "dependencies": {}
+}
