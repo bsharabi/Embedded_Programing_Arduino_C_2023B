@@ -1,0 +1,1 @@
+Note: Each code file is used independently. Burning multiple codes will overwrite the previous code！

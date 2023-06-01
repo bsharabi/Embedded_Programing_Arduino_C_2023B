@@ -1,0 +1,445 @@
+
+
+
+
+
+
+
+Started logging.
+
+>>>
+Content-Length: 3247
+
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":3540,"clientInfo":{"name":"vscode","version":"1.53.2"},"rootPath":"C:\\Users\\Administrator\\AppData\\Local\\Temp\\arduino-language-server3179334680\\sketch","rootUri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch","initializationOptions":{},"capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"contextSupport":true},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"isPreferredSupport":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"colorProvider":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"publishDiagnostics":{"relatedInformation":true,"tagSupport":{"valueSet":[1,2]}},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0043%EF%BC%89Four-way%20tracking%20and%20obstacle%20avoidance%20following%20car%20kit%20v2.0%20tutorial/ZYC0043-2022.9.8/4_Arduino_Code/2_follow","name":"2_follow"}]}}
+<<<
+Content-Length: 1905
+
+{"id":"1","jsonrpc":"2.0","result":{"capabilities":{"astProvider":true,"callHierarchyProvider":true,"clangdInlayHintsProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"compilationDatabase":{"automaticReload":true},"completionProvider":{"allCommitCharacters":[" ","\t","(",")","[","]","{","}","<",">",":",";",",","+","-","/","*","%","^","&","#","?",".","=","\"","'","|"],"resolveProvider":false,"triggerCharacters":[".","<",">",":","\"","/","*"]},"declarationProvider":true,"definitionProvider":true,"documentFormattingProvider":true,"documentHighlightProvider":true,"documentLinkProvider":{"resolveProvider":false},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n","moreTriggerCharacter":[]},"documentRangeFormattingProvider":true,"documentSymbolProvider":true,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"hoverProvider":true,"implementationProvider":true,"memoryUsageProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"selectionRangeProvider":true,"semanticTokensProvider":{"full":{"delta":true},"legend":{"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"],"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"]},"range":false},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","<",">",","]},"textDocumentSync":{"change":2,"openClose":true,"save":true},"typeDefinitionProvider":true,"typeHierarchyProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}}
+>>>
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 7120
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp","languageId":"cpp","version":1,"text":"#include \u003cArduino.h\u003e\n#line 1 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n\n#include \u003cServo.h\u003e\n#define Trig 12 //Pin Tring connects to D12\n#define Echo 13 //Pin Echo connects to D13\nfloat cm; //Distance variable\n// float temp; //\n\nint ENA = 5; \nint IN1 = 3; \nint IN2 = 4;\n\nint ENB = 6; \nint IN3 = 2;\nint IN4 = 7;\n\nint Sensor1 = A2;//pin A2\nint Sensor2 = A5;//pin A5\n\nint SensorLeft;\nint SensorRight;\n\nServo myservo;  // create servo object to control a servo\n// twelve servo objects can be created on most boards\n\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup();\n#line 50 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid loop();\n#line 102 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nfloat GetDistance();\n#line 120 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid left();\n#line 133 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid right();\n#line 146 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid forward();\n#line 161 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid stop();\n#line 173 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid back();\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup()\n{\n    myservo.attach(A0);  // attaches the servo on pin 9 to the servo object\n    //Set the pin mode\n    pinMode(ENA, OUTPUT);\n    pinMode(IN1, OUTPUT);\n    pinMode(IN2, OUTPUT);\n\n    pinMode(ENB, OUTPUT);\n    pinMode(IN3, OUTPUT);\n    pinMode(IN4, OUTPUT);\n\n    pinMode(Sensor1, INPUT);\n    pinMode(Sensor2, INPUT);\n    pinMode(Trig, OUTPUT);\n    pinMode(Echo, INPUT);\n    Serial.begin(9600);\n    myservo.write(100); \n}\n\nvoid loop()\n{\n    cm = GetDistance();\n\n    SensorLeft  =  digitalRead(A2);//The sensor on the left\n    SensorRight =  digitalRead(A5);//The sensor on the Right\n    \n    // If the right sensor detects the signal, the left sensor does not detect the signal, \n    // the ultrasonic detection of the obstacle distance between 5cm to 10cm, turn to the right\n    if (SensorLeft == HIGH \u0026\u0026 SensorRight == LOW \u0026\u0026 ( cm \u003e 5 \u0026\u0026 cm \u003c 10))\n    {\n        right();\n    }\n    else if(SensorLeft == LOW \u0026\u0026 SensorRight == HIGH\u0026\u0026 ( cm \u003e5 \u0026\u0026 cm \u003c10))\n    {\n        left();\n    }\n    else  if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH\u0026\u0026( cm \u003e11 \u0026\u0026 cm \u003c20))\n    {\n        forward();\n    }\n    else if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH \u0026\u0026 ( cm \u003e20 || cm \u003c3))\n    {\n        stop();\n    }\n    else  if((SensorLeft == LOW \u0026\u0026 SensorRight == LOW)||( cm \u003c5))\n    {\n        back();\n    }\n\n    if (SensorLeft == LOW)\n    {\n        myservo.write(160); \n    }\n    else if (SensorRight == LOW)\n    {\n        myservo.write(40); \n    }\n    else \n    {\n        myservo.write(100); \n    }\n    \n}\n\n/*\nFunction: obtain ultrasonic sensor ranging data\nParameters: Trig, Echo\nParameter description: sensor connected to the motherboard pin port A4,A5\nTrig -------\u003e pin D12\nEcho -------\u003e pin D13\n*/\nfloat GetDistance()\n{\n    float distance;\n    // Send a low short pulse to Trig to trigger the ranging\n    digitalWrite(Trig, LOW); //Send a low level to Trig\n    delayMicroseconds(2);\n    digitalWrite(Trig, HIGH);\n    delayMicroseconds(10);\n    digitalWrite(Trig, LOW);\n    distance = pulseIn(Echo, HIGH) / 58.00;\n    \n    Serial.print(\"Distance = \");\n    Serial.println(distance);//The serial output distance is converted into cm\n\n\t  return distance;\n}\n\n//turn left\nvoid left(){\n  //Set the speed of the motor\n    analogWrite(ENA, 60);\n    analogWrite(ENB, 160);\n    //The right forward\n    digitalWrite(IN1, LOW);\n    digitalWrite(IN2, LOW);\n    //The left STOP\n    digitalWrite(IN3, HIGH);\n    digitalWrite(IN4, LOW);\n    Serial.println(\"left\");\n  }\n//turn right\n void right(){\n    //Set the speed of the motor\n   analogWrite(ENA, 160);\n   analogWrite(ENB, 60);\n    //The right stop\n    digitalWrite(IN1, HIGH);\n    digitalWrite(IN2, LOW);\n  //The left forward\n    digitalWrite(IN3,LOW);\n    digitalWrite(IN4,LOW);\n     Serial.println(\"right\");\n  }\n//turn forward\n void forward(){\n    //FORWARD\n    //Set the speed of the motor\n     analogWrite(ENA, 130);\n     analogWrite(ENB, 130);\n     //The right forward\n     digitalWrite(IN1, HIGH);\n     digitalWrite(IN2,LOW);\n     //The left forward\n     digitalWrite(IN3, HIGH);\n     digitalWrite(IN4, LOW);\n     Serial.println(\"forward\");\n  }\n\n//stop\n void stop(){\n    analogWrite(ENA, 0);\n    analogWrite(ENB, 0);\n  //set IN1,IN2,IN3,IN4 to LOW\n    digitalWrite(IN1,LOW);\n    digitalWrite(IN2,LOW);\n    digitalWrite(IN3, LOW);\n    digitalWrite(IN4, LOW);\n     Serial.println(\"stop\");\n  \n  }\n  //back up\n   void back(){\n    //Set the speed of the motor    \n     analogWrite(ENA, 110);\n     analogWrite(ENB, 110);\n     //The right back\n     digitalWrite(IN1, LOW);\n     digitalWrite(IN2,HIGH);\n     //The left back\n     digitalWrite(IN3,LOW);\n     digitalWrite(IN4, HIGH);\n     Serial.println(\"back\");\n  }\n\n"}}}Content-Length: 209
+
+{"jsonrpc":"2.0","id":"2","method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"}}}
+<<<
+Content-Length: 188
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/.clangd"}}Content-Length: 111
+
+{"id":0,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 216
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp","version":1}}Content-Length: 5860
+
+{"id":"2","jsonrpc":"2.0","result":[{"detail":"float","kind":13,"name":"cm","range":{"end":{"character":8,"line":11},"start":{"character":0,"line":11}},"selectionRange":{"end":{"character":8,"line":11},"start":{"character":6,"line":11}}},{"detail":"int","kind":13,"name":"ENA","range":{"end":{"character":11,"line":14},"start":{"character":0,"line":14}},"selectionRange":{"end":{"character":7,"line":14},"start":{"character":4,"line":14}}},{"detail":"int","kind":13,"name":"IN1","range":{"end":{"character":11,"line":15},"start":{"character":0,"line":15}},"selectionRange":{"end":{"character":7,"line":15},"start":{"character":4,"line":15}}},{"detail":"int","kind":13,"name":"IN2","range":{"end":{"character":11,"line":16},"start":{"character":0,"line":16}},"selectionRange":{"end":{"character":7,"line":16},"start":{"character":4,"line":16}}},{"detail":"int","kind":13,"name":"ENB","range":{"end":{"character":11,"line":18},"start":{"character":0,"line":18}},"selectionRange":{"end":{"character":7,"line":18},"start":{"character":4,"line":18}}},{"detail":"int","kind":13,"name":"IN3","range":{"end":{"character":11,"line":19},"start":{"character":0,"line":19}},"selectionRange":{"end":{"character":7,"line":19},"start":{"character":4,"line":19}}},{"detail":"int","kind":13,"name":"IN4","range":{"end":{"character":11,"line":20},"start":{"character":0,"line":20}},"selectionRange":{"end":{"character":7,"line":20},"start":{"character":4,"line":20}}},{"detail":"int","kind":13,"name":"Sensor1","range":{"end":{"character":16,"line":22},"start":{"character":0,"line":22}},"selectionRange":{"end":{"character":11,"line":22},"start":{"character":4,"line":22}}},{"detail":"int","kind":13,"name":"Sensor2","range":{"end":{"character":16,"line":23},"start":{"character":0,"line":23}},"selectionRange":{"end":{"character":11,"line":23},"start":{"character":4,"line":23}}},{"detail":"int","kind":13,"name":"SensorLeft","range":{"end":{"character":14,"line":25},"start":{"character":0,"line":25}},"selectionRange":{"end":{"character":14,"line":25},"start":{"character":4,"line":25}}},{"detail":"int","kind":13,"name":"SensorRight","range":{"end":{"character":15,"line":26},"start":{"character":0,"line":26}},"selectionRange":{"end":{"character":15,"line":26},"start":{"character":4,"line":26}}},{"detail":"Servo","kind":13,"name":"myservo","range":{"end":{"character":13,"line":28},"start":{"character":0,"line":28}},"selectionRange":{"end":{"character":13,"line":28},"start":{"character":6,"line":28}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":12,"line":32},"start":{"character":0,"line":32}},"selectionRange":{"end":{"character":10,"line":32},"start":{"character":5,"line":32}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":11,"line":34},"start":{"character":0,"line":34}},"selectionRange":{"end":{"character":9,"line":34},"start":{"character":5,"line":34}}},{"detail":"float ()","kind":12,"name":"GetDistance","range":{"end":{"character":19,"line":36},"start":{"character":0,"line":36}},"selectionRange":{"end":{"character":17,"line":36},"start":{"character":6,"line":36}}},{"detail":"void ()","kind":12,"name":"left","range":{"end":{"character":11,"line":38},"start":{"character":0,"line":38}},"selectionRange":{"end":{"character":9,"line":38},"start":{"character":5,"line":38}}},{"detail":"void ()","kind":12,"name":"right","range":{"end":{"character":12,"line":40},"start":{"character":0,"line":40}},"selectionRange":{"end":{"character":10,"line":40},"start":{"character":5,"line":40}}},{"detail":"void ()","kind":12,"name":"forward","range":{"end":{"character":14,"line":42},"start":{"character":0,"line":42}},"selectionRange":{"end":{"character":12,"line":42},"start":{"character":5,"line":42}}},{"detail":"void ()","kind":12,"name":"stop","range":{"end":{"character":11,"line":44},"start":{"character":0,"line":44}},"selectionRange":{"end":{"character":9,"line":44},"start":{"character":5,"line":44}}},{"detail":"void ()","kind":12,"name":"back","range":{"end":{"character":11,"line":46},"start":{"character":0,"line":46}},"selectionRange":{"end":{"character":9,"line":46},"start":{"character":5,"line":46}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":1,"line":66},"start":{"character":0,"line":48}},"selectionRange":{"end":{"character":10,"line":48},"start":{"character":5,"line":48}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":1,"line":111},"start":{"character":0,"line":68}},"selectionRange":{"end":{"character":9,"line":68},"start":{"character":5,"line":68}}},{"detail":"float ()","kind":12,"name":"GetDistance","range":{"end":{"character":1,"line":135},"start":{"character":0,"line":120}},"selectionRange":{"end":{"character":17,"line":120},"start":{"character":6,"line":120}}},{"detail":"void ()","kind":12,"name":"left","range":{"end":{"character":3,"line":149},"start":{"character":0,"line":138}},"selectionRange":{"end":{"character":9,"line":138},"start":{"character":5,"line":138}}},{"detail":"void ()","kind":12,"name":"right","range":{"end":{"character":3,"line":162},"start":{"character":1,"line":151}},"selectionRange":{"end":{"character":11,"line":151},"start":{"character":6,"line":151}}},{"detail":"void ()","kind":12,"name":"forward","range":{"end":{"character":3,"line":176},"start":{"character":1,"line":164}},"selectionRange":{"end":{"character":13,"line":164},"start":{"character":6,"line":164}}},{"detail":"void ()","kind":12,"name":"stop","range":{"end":{"character":3,"line":189},"start":{"character":1,"line":179}},"selectionRange":{"end":{"character":10,"line":179},"start":{"character":6,"line":179}}},{"detail":"void ()","kind":12,"name":"back","range":{"end":{"character":3,"line":202},"start":{"character":3,"line":191}},"selectionRange":{"end":{"character":12,"line":191},"start":{"character":8,"line":191}}}]}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/27","percentage":81}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/27","percentage":85}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/27","percentage":88}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/27","percentage":92}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/27","percentage":96}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 193
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"}}}Content-Length: 7124
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp","version":2},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n\n#include \u003cServo.h\u003e\n#define Trig 12 //Pin Tring connects to D12\n#define Echo 13 //Pin Echo connects to D13\nfloat cm; //Distance variable\n// float temp; //\n\nint ENA = 5; \nint IN1 = 3; \nint IN2 = 4;\n\nint ENB = 6; \nint IN3 = 2;\nint IN4 = 7;\n\nint Sensor1 = A2;//pin A2\nint Sensor2 = A5;//pin A5\n\nint SensorLeft;\nint SensorRight;\n\nServo myservo;  // create servo object to control a servo\n// twelve servo objects can be created on most boards\n\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup();\n#line 50 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid loop();\n#line 102 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nfloat GetDistance();\n#line 120 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid left();\n#line 133 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid right();\n#line 146 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid forward();\n#line 161 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid stop();\n#line 173 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid back();\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup()\n{\n    myservo.attach(A0);  // attaches the servo on pin 9 to the servo object\n    //Set the pin mode\n    pinMode(ENA, OUTPUT);\n    pinMode(IN1, OUTPUT);\n    pinMode(IN2, OUTPUT);\n\n    pinMode(ENB, OUTPUT);\n    pinMode(IN3, OUTPUT);\n    pinMode(IN4, OUTPUT);\n\n    pinMode(Sensor1, INPUT);\n    pinMode(Sensor2, INPUT);\n    pinMode(Trig, OUTPUT);\n    pinMode(Echo, INPUT);\n    Serial.begin(9600);\n    myservo.write(100); \n}\n\nvoid loop()\n{\n    cm = GetDistance();\n\n    SensorLeft  =  digitalRead(A2);//The sensor on the left\n    SensorRight =  digitalRead(A5);//The sensor on the Right\n    \n    // If the right sensor detects the signal, the left sensor does not detect the signal, \n    // the ultrasonic detection of the obstacle distance between 5cm to 10cm, turn to the right\n    if (SensorLeft == HIGH \u0026\u0026 SensorRight == LOW \u0026\u0026 ( cm \u003e 5 \u0026\u0026 cm \u003c 10))\n    {\n        right();\n    }\n    else if(SensorLeft == LOW \u0026\u0026 SensorRight == HIGH\u0026\u0026 ( cm \u003e5 \u0026\u0026 cm \u003c10))\n    {\n        left();\n    }\n    else  if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH\u0026\u0026( cm \u003e11 \u0026\u0026 cm \u003c20))\n    {\n        forward();\n    }\n    else if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH \u0026\u0026 ( cm \u003e20 || cm \u003c3))\n    {\n        stop();\n    }\n    else  if((SensorLeft == LOW \u0026\u0026 SensorRight == LOW)||( cm \u003c5))\n    {\n        back();\n    }\n\n    if (SensorLeft == LOW)\n    {\n        myservo.write(160); \n    }\n    else if (SensorRight == LOW)\n    {\n        myservo.write(40); \n    }\n    else \n    {\n        myservo.write(100); \n    }\n    \n}\n\n/*\nFunction: obtain ultrasonic sensor ranging data\nParameters: Trig, Echo\nParameter description: sensor connected to the motherboard pin port A4,A5\nTrig -------\u003e pin D12\nEcho -------\u003e pin D13\n*/\nfloat GetDistance()\n{\n    float distance;\n    // Send a low short pulse to Trig to trigger the ranging\n    digitalWrite(Trig, LOW); //Send a low level to Trig\n    delayMicroseconds(2);\n    digitalWrite(Trig, HIGH);\n    delayMicroseconds(10);\n    digitalWrite(Trig, LOW);\n    distance = pulseIn(Echo, HIGH) / 58.00;\n    \n    Serial.print(\"Distance = \");\n    Serial.println(distance);//The serial output distance is converted into cm\n\n\t  return distance;\n}\n\n//turn left\nvoid left(){\n  //Set the speed of the motor\n    analogWrite(ENA, 60);\n    analogWrite(ENB, 160);\n    //The right forward\n    digitalWrite(IN1, LOW);\n    digitalWrite(IN2, LOW);\n    //The left STOP\n    digitalWrite(IN3, HIGH);\n    digitalWrite(IN4, LOW);\n    Serial.println(\"left\");\n  }\n//turn right\n void right(){\n    //Set the speed of the motor\n   analogWrite(ENA, 160);\n   analogWrite(ENB, 60);\n    //The right stop\n    digitalWrite(IN1, HIGH);\n    digitalWrite(IN2, LOW);\n  //The left forward\n    digitalWrite(IN3,LOW);\n    digitalWrite(IN4,LOW);\n     Serial.println(\"right\");\n  }\n//turn forward\n void forward(){\n    //FORWARD\n    //Set the speed of the motor\n     analogWrite(ENA, 130);\n     analogWrite(ENB, 130);\n     //The right forward\n     digitalWrite(IN1, HIGH);\n     digitalWrite(IN2,LOW);\n     //The left forward\n     digitalWrite(IN3, HIGH);\n     digitalWrite(IN4, LOW);\n     Serial.println(\"forward\");\n  }\n\n//stop\n void stop(){\n    analogWrite(ENA, 0);\n    analogWrite(ENB, 0);\n  //set IN1,IN2,IN3,IN4 to LOW\n    digitalWrite(IN1,LOW);\n    digitalWrite(IN2,LOW);\n    digitalWrite(IN3, LOW);\n    digitalWrite(IN4, LOW);\n     Serial.println(\"stop\");\n  \n  }\n  //back up\n   void back(){\n    //Set the speed of the motor    \n     analogWrite(ENA, 110);\n     analogWrite(ENB, 110);\n     //The right back\n     digitalWrite(IN1, LOW);\n     digitalWrite(IN2,HIGH);\n     //The left back\n     digitalWrite(IN3,LOW);\n     digitalWrite(IN4, HIGH);\n     Serial.println(\"back\");\n  }\n\n"}]}}
+<<<
+Content-Length: 111
+
+{"id":1,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":1,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 312
+
+{"jsonrpc":"2.0","id":"3","method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"},"range":{"start":{"line":79,"character":16},"end":{"line":79,"character":16}},"context":{"diagnostics":[]}}}
+<<<
+Content-Length: 38
+
+{"id":"3","jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 238
+
+{"jsonrpc":"2.0","id":"4","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"},"position":{"line":73,"character":15}}}
+<<<
+Content-Length: 243
+
+{"id":"4","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### variable `SensorRight`  \n\n---\nType: `int`  \n\n---\n```cpp\nint SensorRight\n```"},"range":{"end":{"character":15,"line":73},"start":{"character":4,"line":73}}}}
+>>>
+Content-Length: 193
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"}}}Content-Length: 7124
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp","version":3},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n\n#include \u003cServo.h\u003e\n#define Trig 12 //Pin Tring connects to D12\n#define Echo 13 //Pin Echo connects to D13\nfloat cm; //Distance variable\n// float temp; //\n\nint ENA = 5; \nint IN1 = 3; \nint IN2 = 4;\n\nint ENB = 6; \nint IN3 = 2;\nint IN4 = 7;\n\nint Sensor1 = A2;//pin A2\nint Sensor2 = A5;//pin A5\n\nint SensorLeft;\nint SensorRight;\n\nServo myservo;  // create servo object to control a servo\n// twelve servo objects can be created on most boards\n\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup();\n#line 50 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid loop();\n#line 102 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nfloat GetDistance();\n#line 120 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid left();\n#line 133 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid right();\n#line 146 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid forward();\n#line 161 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid stop();\n#line 173 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid back();\n#line 30 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-2022.9.8\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup()\n{\n    myservo.attach(A0);  // attaches the servo on pin 9 to the servo object\n    //Set the pin mode\n    pinMode(ENA, OUTPUT);\n    pinMode(IN1, OUTPUT);\n    pinMode(IN2, OUTPUT);\n\n    pinMode(ENB, OUTPUT);\n    pinMode(IN3, OUTPUT);\n    pinMode(IN4, OUTPUT);\n\n    pinMode(Sensor1, INPUT);\n    pinMode(Sensor2, INPUT);\n    pinMode(Trig, OUTPUT);\n    pinMode(Echo, INPUT);\n    Serial.begin(9600);\n    myservo.write(100); \n}\n\nvoid loop()\n{\n    cm = GetDistance();\n\n    SensorLeft  =  digitalRead(A2);//The sensor on the left\n    SensorRight =  digitalRead(A5);//The sensor on the Right\n    \n    // If the right sensor detects the signal, the left sensor does not detect the signal, \n    // the ultrasonic detection of the obstacle distance between 5cm to 10cm, turn to the right\n    if (SensorLeft == HIGH \u0026\u0026 SensorRight == LOW \u0026\u0026 ( cm \u003e 5 \u0026\u0026 cm \u003c 10))\n    {\n        right();\n    }\n    else if(SensorLeft == LOW \u0026\u0026 SensorRight == HIGH\u0026\u0026 ( cm \u003e5 \u0026\u0026 cm \u003c10))\n    {\n        left();\n    }\n    else  if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH\u0026\u0026( cm \u003e11 \u0026\u0026 cm \u003c20))\n    {\n        forward();\n    }\n    else if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH \u0026\u0026 ( cm \u003e20 || cm \u003c3))\n    {\n        stop();\n    }\n    else  if((SensorLeft == LOW \u0026\u0026 SensorRight == LOW)||( cm \u003c5))\n    {\n        back();\n    }\n\n    if (SensorLeft == LOW)\n    {\n        myservo.write(160); \n    }\n    else if (SensorRight == LOW)\n    {\n        myservo.write(40); \n    }\n    else \n    {\n        myservo.write(100); \n    }\n    \n}\n\n/*\nFunction: obtain ultrasonic sensor ranging data\nParameters: Trig, Echo\nParameter description: sensor connected to the motherboard pin port A4,A5\nTrig -------\u003e pin D12\nEcho -------\u003e pin D13\n*/\nfloat GetDistance()\n{\n    float distance;\n    // Send a low short pulse to Trig to trigger the ranging\n    digitalWrite(Trig, LOW); //Send a low level to Trig\n    delayMicroseconds(2);\n    digitalWrite(Trig, HIGH);\n    delayMicroseconds(10);\n    digitalWrite(Trig, LOW);\n    distance = pulseIn(Echo, HIGH) / 58.00;\n    \n    Serial.print(\"Distance = \");\n    Serial.println(distance);//The serial output distance is converted into cm\n\n\t  return distance;\n}\n\n//turn left\nvoid left(){\n  //Set the speed of the motor\n    analogWrite(ENA, 60);\n    analogWrite(ENB, 160);\n    //The right forward\n    digitalWrite(IN1, LOW);\n    digitalWrite(IN2, LOW);\n    //The left STOP\n    digitalWrite(IN3, HIGH);\n    digitalWrite(IN4, LOW);\n    Serial.println(\"left\");\n  }\n//turn right\n void right(){\n    //Set the speed of the motor\n   analogWrite(ENA, 160);\n   analogWrite(ENB, 60);\n    //The right stop\n    digitalWrite(IN1, HIGH);\n    digitalWrite(IN2, LOW);\n  //The left forward\n    digitalWrite(IN3,LOW);\n    digitalWrite(IN4,LOW);\n     Serial.println(\"right\");\n  }\n//turn forward\n void forward(){\n    //FORWARD\n    //Set the speed of the motor\n     analogWrite(ENA, 130);\n     analogWrite(ENB, 130);\n     //The right forward\n     digitalWrite(IN1, HIGH);\n     digitalWrite(IN2,LOW);\n     //The left forward\n     digitalWrite(IN3, HIGH);\n     digitalWrite(IN4, LOW);\n     Serial.println(\"forward\");\n  }\n\n//stop\n void stop(){\n    analogWrite(ENA, 0);\n    analogWrite(ENB, 0);\n  //set IN1,IN2,IN3,IN4 to LOW\n    digitalWrite(IN1,LOW);\n    digitalWrite(IN2,LOW);\n    digitalWrite(IN3, LOW);\n    digitalWrite(IN4, LOW);\n     Serial.println(\"stop\");\n  \n  }\n  //back up\n   void back(){\n    //Set the speed of the motor    \n     analogWrite(ENA, 110);\n     analogWrite(ENB, 110);\n     //The right back\n     digitalWrite(IN1, LOW);\n     digitalWrite(IN2,HIGH);\n     //The left back\n     digitalWrite(IN3,LOW);\n     digitalWrite(IN4, HIGH);\n     Serial.println(\"back\");\n  }\n\n"}]}}
+<<<
+Content-Length: 111
+
+{"id":2,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":2,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 312
+
+{"jsonrpc":"2.0","id":"5","method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"},"range":{"start":{"line":77,"character":52},"end":{"line":77,"character":52}},"context":{"diagnostics":[]}}}
+<<<
+Content-Length: 38
+
+{"id":"5","jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 238
+
+{"jsonrpc":"2.0","id":"6","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3179334680/sketch/2_follow.ino.cpp"},"position":{"line":72,"character":13}}}
+<<<
+Content-Length: 241
+
+{"id":"6","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### variable `SensorLeft`  \n\n---\nType: `int`  \n\n---\n```cpp\nint SensorLeft\n```"},"range":{"end":{"character":14,"line":72},"start":{"character":4,"line":72}}}}
+>>>
+Content-Length: 60
+
+{"jsonrpc":"2.0","id":"7","method":"shutdown","params":null}
+<<<
+Content-Length: 40
+
+{"id":"7","jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}
+
+
+
+
+
+
+Started logging.
+
+>>>
+Content-Length: 3243
+
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":18260,"clientInfo":{"name":"vscode","version":"1.53.2"},"rootPath":"C:\\Users\\Administrator\\AppData\\Local\\Temp\\arduino-language-server3804977976\\sketch","rootUri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch","initializationOptions":{},"capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"contextSupport":true},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"isPreferredSupport":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"colorProvider":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"publishDiagnostics":{"relatedInformation":true,"tagSupport":{"valueSet":[1,2]}},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file:///e%3A/5-%E6%95%99%E7%A8%8B/1.tutorial/ZYC0043%EF%BC%89Four-way%20tracking%20and%20obstacle%20avoidance%20following%20car%20kit%20v2.0%20tutorial/ZYC0043-EN/4_Arduino_Code/2_follow","name":"2_follow"}]}}
+<<<
+Content-Length: 1905
+
+{"id":"1","jsonrpc":"2.0","result":{"capabilities":{"astProvider":true,"callHierarchyProvider":true,"clangdInlayHintsProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"compilationDatabase":{"automaticReload":true},"completionProvider":{"allCommitCharacters":[" ","\t","(",")","[","]","{","}","<",">",":",";",",","+","-","/","*","%","^","&","#","?",".","=","\"","'","|"],"resolveProvider":false,"triggerCharacters":[".","<",">",":","\"","/","*"]},"declarationProvider":true,"definitionProvider":true,"documentFormattingProvider":true,"documentHighlightProvider":true,"documentLinkProvider":{"resolveProvider":false},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n","moreTriggerCharacter":[]},"documentRangeFormattingProvider":true,"documentSymbolProvider":true,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"hoverProvider":true,"implementationProvider":true,"memoryUsageProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"selectionRangeProvider":true,"semanticTokensProvider":{"full":{"delta":true},"legend":{"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"],"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"]},"range":false},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","<",">",","]},"textDocumentSync":{"change":2,"openClose":true,"save":true},"typeDefinitionProvider":true,"typeHierarchyProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}}
+>>>
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 6945
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp","languageId":"cpp","version":1,"text":"#include \u003cArduino.h\u003e\n#line 1 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n\n#include \u003cServo.h\u003e\n#define Trig 12 //Pin Tring connects to D12\n#define Echo 13 //Pin Echo connects to D13\nfloat cm; //Distance variable\n// float temp; //\n\nint ENA = 5; \nint IN1 = 3; \nint IN2 = 4;\n\nint ENB = 6; \nint IN3 = 2;\nint IN4 = 7;\n\nint Sensor1 = A2;//pin A2\nint Sensor2 = A5;//pin A5\n\nint SensorLeft;\nint SensorRight;\n\nServo myservo;  // create servo object to control a servo\n// twelve servo objects can be created on most boards\n\n#line 30 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup();\n#line 50 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid loop();\n#line 102 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nfloat GetDistance();\n#line 120 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid left();\n#line 133 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid right();\n#line 146 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid forward();\n#line 161 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid stop();\n#line 173 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid back();\n#line 30 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup()\n{\n    myservo.attach(A0);  // attaches the servo on pin 9 to the servo object\n    //Set the pin mode\n    pinMode(ENA, OUTPUT);\n    pinMode(IN1, OUTPUT);\n    pinMode(IN2, OUTPUT);\n\n    pinMode(ENB, OUTPUT);\n    pinMode(IN3, OUTPUT);\n    pinMode(IN4, OUTPUT);\n\n    pinMode(Sensor1, INPUT);\n    pinMode(Sensor2, INPUT);\n    pinMode(Trig, OUTPUT);\n    pinMode(Echo, INPUT);\n    Serial.begin(9600);\n    myservo.write(100); \n}\n\nvoid loop()\n{\n    cm = GetDistance();\n\n    SensorLeft  =  digitalRead(A2);//The sensor on the left\n    SensorRight =  digitalRead(A5);//The sensor on the Right\n    \n    // If the right sensor detects the signal, the left sensor does not detect the signal, \n    // the ultrasonic detection of the obstacle distance between 5cm to 10cm, turn to the right\n    if (SensorLeft == HIGH \u0026\u0026 SensorRight == LOW \u0026\u0026 ( cm \u003e 5 \u0026\u0026 cm \u003c 10))\n    {\n        right();\n    }\n    else if(SensorLeft == LOW \u0026\u0026 SensorRight == HIGH\u0026\u0026 ( cm \u003e5 \u0026\u0026 cm \u003c10))\n    {\n        left();\n    }\n    else  if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH\u0026\u0026( cm \u003e11 \u0026\u0026 cm \u003c20))\n    {\n        forward();\n    }\n    else if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH \u0026\u0026 ( cm \u003e20 || cm \u003c3))\n    {\n        stop();\n    }\n    else  if((SensorLeft == LOW \u0026\u0026 SensorRight == LOW)||( cm \u003c5 \u0026\u0026 cm \u003e 0))\n    {\n        back();\n    }\n\n    if (SensorLeft == LOW)\n    {\n        myservo.write(160); \n    }\n    else if (SensorRight == LOW)\n    {\n        myservo.write(40); \n    }\n    else \n    {\n        myservo.write(100); \n    }\n    \n}\n\n/*\nFunction: obtain ultrasonic sensor ranging data\nParameters: Trig, Echo\nParameter description: sensor connected to the motherboard pin port A4,A5\nTrig -------\u003e pin D12\nEcho -------\u003e pin D13\n*/\nfloat GetDistance()\n{\n    float distance;\n    // Send a low short pulse to Trig to trigger the ranging\n    digitalWrite(Trig, LOW); //Send a low level to Trig\n    delayMicroseconds(2);\n    digitalWrite(Trig, HIGH);\n    delayMicroseconds(10);\n    digitalWrite(Trig, LOW);\n    distance = pulseIn(Echo, HIGH) / 58.00;\n    \n    Serial.print(\"Distance = \");\n    Serial.println(distance);//The serial output distance is converted into cm\n\n\t  return distance;\n}\n\n//turn left\nvoid left(){\n  //Set the speed of the motor\n    analogWrite(ENA, 60);\n    analogWrite(ENB, 160);\n    //The right forward\n    digitalWrite(IN1, LOW);\n    digitalWrite(IN2, LOW);\n    //The left STOP\n    digitalWrite(IN3, HIGH);\n    digitalWrite(IN4, LOW);\n    Serial.println(\"left\");\n  }\n//turn right\n void right(){\n    //Set the speed of the motor\n   analogWrite(ENA, 160);\n   analogWrite(ENB, 60);\n    //The right stop\n    digitalWrite(IN1, HIGH);\n    digitalWrite(IN2, LOW);\n  //The left forward\n    digitalWrite(IN3,LOW);\n    digitalWrite(IN4,LOW);\n     Serial.println(\"right\");\n  }\n//turn forward\n void forward(){\n    //FORWARD\n    //Set the speed of the motor\n     analogWrite(ENA, 130);\n     analogWrite(ENB, 130);\n     //The right forward\n     digitalWrite(IN1, HIGH);\n     digitalWrite(IN2,LOW);\n     //The left forward\n     digitalWrite(IN3, HIGH);\n     digitalWrite(IN4, LOW);\n     Serial.println(\"forward\");\n  }\n\n//stop\n void stop(){\n    analogWrite(ENA, 0);\n    analogWrite(ENB, 0);\n  //set IN1,IN2,IN3,IN4 to LOW\n    digitalWrite(IN1,LOW);\n    digitalWrite(IN2,LOW);\n    digitalWrite(IN3, LOW);\n    digitalWrite(IN4, LOW);\n     Serial.println(\"stop\");\n  \n  }\n  //back up\n   void back(){\n    //Set the speed of the motor    \n     analogWrite(ENA, 110);\n     analogWrite(ENB, 110);\n     //The right back\n     digitalWrite(IN1, LOW);\n     digitalWrite(IN2,HIGH);\n     //The left back\n     digitalWrite(IN3,LOW);\n     digitalWrite(IN4, HIGH);\n     Serial.println(\"back\");\n  }\n\n"}}}Content-Length: 314
+
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"},"range":{"start":{"line":131,"character":32},"end":{"line":131,"character":32}},"context":{"diagnostics":[]}}}
+<<<
+Content-Length: 188
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/.clangd"}}Content-Length: 111
+
+{"id":0,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 216
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp","version":1}}Content-Length: 38
+
+{"id":"2","jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 209
+
+{"jsonrpc":"2.0","id":"3","method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"}}}
+<<<
+Content-Length: 5860
+
+{"id":"3","jsonrpc":"2.0","result":[{"detail":"float","kind":13,"name":"cm","range":{"end":{"character":8,"line":11},"start":{"character":0,"line":11}},"selectionRange":{"end":{"character":8,"line":11},"start":{"character":6,"line":11}}},{"detail":"int","kind":13,"name":"ENA","range":{"end":{"character":11,"line":14},"start":{"character":0,"line":14}},"selectionRange":{"end":{"character":7,"line":14},"start":{"character":4,"line":14}}},{"detail":"int","kind":13,"name":"IN1","range":{"end":{"character":11,"line":15},"start":{"character":0,"line":15}},"selectionRange":{"end":{"character":7,"line":15},"start":{"character":4,"line":15}}},{"detail":"int","kind":13,"name":"IN2","range":{"end":{"character":11,"line":16},"start":{"character":0,"line":16}},"selectionRange":{"end":{"character":7,"line":16},"start":{"character":4,"line":16}}},{"detail":"int","kind":13,"name":"ENB","range":{"end":{"character":11,"line":18},"start":{"character":0,"line":18}},"selectionRange":{"end":{"character":7,"line":18},"start":{"character":4,"line":18}}},{"detail":"int","kind":13,"name":"IN3","range":{"end":{"character":11,"line":19},"start":{"character":0,"line":19}},"selectionRange":{"end":{"character":7,"line":19},"start":{"character":4,"line":19}}},{"detail":"int","kind":13,"name":"IN4","range":{"end":{"character":11,"line":20},"start":{"character":0,"line":20}},"selectionRange":{"end":{"character":7,"line":20},"start":{"character":4,"line":20}}},{"detail":"int","kind":13,"name":"Sensor1","range":{"end":{"character":16,"line":22},"start":{"character":0,"line":22}},"selectionRange":{"end":{"character":11,"line":22},"start":{"character":4,"line":22}}},{"detail":"int","kind":13,"name":"Sensor2","range":{"end":{"character":16,"line":23},"start":{"character":0,"line":23}},"selectionRange":{"end":{"character":11,"line":23},"start":{"character":4,"line":23}}},{"detail":"int","kind":13,"name":"SensorLeft","range":{"end":{"character":14,"line":25},"start":{"character":0,"line":25}},"selectionRange":{"end":{"character":14,"line":25},"start":{"character":4,"line":25}}},{"detail":"int","kind":13,"name":"SensorRight","range":{"end":{"character":15,"line":26},"start":{"character":0,"line":26}},"selectionRange":{"end":{"character":15,"line":26},"start":{"character":4,"line":26}}},{"detail":"Servo","kind":13,"name":"myservo","range":{"end":{"character":13,"line":28},"start":{"character":0,"line":28}},"selectionRange":{"end":{"character":13,"line":28},"start":{"character":6,"line":28}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":12,"line":32},"start":{"character":0,"line":32}},"selectionRange":{"end":{"character":10,"line":32},"start":{"character":5,"line":32}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":11,"line":34},"start":{"character":0,"line":34}},"selectionRange":{"end":{"character":9,"line":34},"start":{"character":5,"line":34}}},{"detail":"float ()","kind":12,"name":"GetDistance","range":{"end":{"character":19,"line":36},"start":{"character":0,"line":36}},"selectionRange":{"end":{"character":17,"line":36},"start":{"character":6,"line":36}}},{"detail":"void ()","kind":12,"name":"left","range":{"end":{"character":11,"line":38},"start":{"character":0,"line":38}},"selectionRange":{"end":{"character":9,"line":38},"start":{"character":5,"line":38}}},{"detail":"void ()","kind":12,"name":"right","range":{"end":{"character":12,"line":40},"start":{"character":0,"line":40}},"selectionRange":{"end":{"character":10,"line":40},"start":{"character":5,"line":40}}},{"detail":"void ()","kind":12,"name":"forward","range":{"end":{"character":14,"line":42},"start":{"character":0,"line":42}},"selectionRange":{"end":{"character":12,"line":42},"start":{"character":5,"line":42}}},{"detail":"void ()","kind":12,"name":"stop","range":{"end":{"character":11,"line":44},"start":{"character":0,"line":44}},"selectionRange":{"end":{"character":9,"line":44},"start":{"character":5,"line":44}}},{"detail":"void ()","kind":12,"name":"back","range":{"end":{"character":11,"line":46},"start":{"character":0,"line":46}},"selectionRange":{"end":{"character":9,"line":46},"start":{"character":5,"line":46}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":1,"line":66},"start":{"character":0,"line":48}},"selectionRange":{"end":{"character":10,"line":48},"start":{"character":5,"line":48}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":1,"line":111},"start":{"character":0,"line":68}},"selectionRange":{"end":{"character":9,"line":68},"start":{"character":5,"line":68}}},{"detail":"float ()","kind":12,"name":"GetDistance","range":{"end":{"character":1,"line":135},"start":{"character":0,"line":120}},"selectionRange":{"end":{"character":17,"line":120},"start":{"character":6,"line":120}}},{"detail":"void ()","kind":12,"name":"left","range":{"end":{"character":3,"line":149},"start":{"character":0,"line":138}},"selectionRange":{"end":{"character":9,"line":138},"start":{"character":5,"line":138}}},{"detail":"void ()","kind":12,"name":"right","range":{"end":{"character":3,"line":162},"start":{"character":1,"line":151}},"selectionRange":{"end":{"character":11,"line":151},"start":{"character":6,"line":151}}},{"detail":"void ()","kind":12,"name":"forward","range":{"end":{"character":3,"line":176},"start":{"character":1,"line":164}},"selectionRange":{"end":{"character":13,"line":164},"start":{"character":6,"line":164}}},{"detail":"void ()","kind":12,"name":"stop","range":{"end":{"character":3,"line":189},"start":{"character":1,"line":179}},"selectionRange":{"end":{"character":10,"line":179},"start":{"character":6,"line":179}}},{"detail":"void ()","kind":12,"name":"back","range":{"end":{"character":3,"line":202},"start":{"character":3,"line":191}},"selectionRange":{"end":{"character":12,"line":191},"start":{"character":8,"line":191}}}]}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}
+>>>
+Content-Length: 239
+
+{"jsonrpc":"2.0","id":"4","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"},"position":{"line":123,"character":54}}}
+<<<
+Content-Length: 40
+
+{"id":"4","jsonrpc":"2.0","result":null}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/27","percentage":81}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/27","percentage":85}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/27","percentage":88}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/27","percentage":92}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/27","percentage":96}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 193
+
+{"jsonrpc":"2.0","method":"textDocument/didSave","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"}}}Content-Length: 6949
+
+{"jsonrpc":"2.0","method":"textDocument/didChange","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp","version":2},"contentChanges":[{"text":"#include \u003cArduino.h\u003e\n#line 1 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n\n#include \u003cServo.h\u003e\n#define Trig 12 //Pin Tring connects to D12\n#define Echo 13 //Pin Echo connects to D13\nfloat cm; //Distance variable\n// float temp; //\n\nint ENA = 5; \nint IN1 = 3; \nint IN2 = 4;\n\nint ENB = 6; \nint IN3 = 2;\nint IN4 = 7;\n\nint Sensor1 = A2;//pin A2\nint Sensor2 = A5;//pin A5\n\nint SensorLeft;\nint SensorRight;\n\nServo myservo;  // create servo object to control a servo\n// twelve servo objects can be created on most boards\n\n#line 30 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup();\n#line 50 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid loop();\n#line 102 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nfloat GetDistance();\n#line 120 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid left();\n#line 133 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid right();\n#line 146 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid forward();\n#line 161 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid stop();\n#line 173 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid back();\n#line 30 \"E:\\\\5-教程\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043-EN\\\\4_Arduino_Code\\\\2_follow\\\\2_follow.ino\"\nvoid setup()\n{\n    myservo.attach(A0);  // attaches the servo on pin 9 to the servo object\n    //Set the pin mode\n    pinMode(ENA, OUTPUT);\n    pinMode(IN1, OUTPUT);\n    pinMode(IN2, OUTPUT);\n\n    pinMode(ENB, OUTPUT);\n    pinMode(IN3, OUTPUT);\n    pinMode(IN4, OUTPUT);\n\n    pinMode(Sensor1, INPUT);\n    pinMode(Sensor2, INPUT);\n    pinMode(Trig, OUTPUT);\n    pinMode(Echo, INPUT);\n    Serial.begin(9600);\n    myservo.write(100); \n}\n\nvoid loop()\n{\n    cm = GetDistance();\n\n    SensorLeft  =  digitalRead(A2);//The sensor on the left\n    SensorRight =  digitalRead(A5);//The sensor on the Right\n    \n    // If the right sensor detects the signal, the left sensor does not detect the signal, \n    // the ultrasonic detection of the obstacle distance between 5cm to 10cm, turn to the right\n    if (SensorLeft == HIGH \u0026\u0026 SensorRight == LOW \u0026\u0026 ( cm \u003e 5 \u0026\u0026 cm \u003c 10))\n    {\n        right();\n    }\n    else if(SensorLeft == LOW \u0026\u0026 SensorRight == HIGH\u0026\u0026 ( cm \u003e5 \u0026\u0026 cm \u003c10))\n    {\n        left();\n    }\n    else  if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH\u0026\u0026( cm \u003e11 \u0026\u0026 cm \u003c20))\n    {\n        forward();\n    }\n    else if(SensorLeft == HIGH \u0026\u0026 SensorRight == HIGH \u0026\u0026 ( cm \u003e20 || cm \u003c3))\n    {\n        stop();\n    }\n    else  if((SensorLeft == LOW \u0026\u0026 SensorRight == LOW)||( cm \u003c5 \u0026\u0026 cm \u003e 0))\n    {\n        back();\n    }\n\n    if (SensorLeft == LOW)\n    {\n        myservo.write(160); \n    }\n    else if (SensorRight == LOW)\n    {\n        myservo.write(40); \n    }\n    else \n    {\n        myservo.write(100); \n    }\n    \n}\n\n/*\nFunction: obtain ultrasonic sensor ranging data\nParameters: Trig, Echo\nParameter description: sensor connected to the motherboard pin port A4,A5\nTrig -------\u003e pin D12\nEcho -------\u003e pin D13\n*/\nfloat GetDistance()\n{\n    float distance;\n    // Send a low short pulse to Trig to trigger the ranging\n    digitalWrite(Trig, LOW); //Send a low level to Trig\n    delayMicroseconds(2);\n    digitalWrite(Trig, HIGH);\n    delayMicroseconds(10);\n    digitalWrite(Trig, LOW);\n    distance = pulseIn(Echo, HIGH) / 58.00;\n    \n    Serial.print(\"Distance = \");\n    Serial.println(distance);//The serial output distance is converted into cm\n\n\t  return distance;\n}\n\n//turn left\nvoid left(){\n  //Set the speed of the motor\n    analogWrite(ENA, 60);\n    analogWrite(ENB, 160);\n    //The right forward\n    digitalWrite(IN1, LOW);\n    digitalWrite(IN2, LOW);\n    //The left STOP\n    digitalWrite(IN3, HIGH);\n    digitalWrite(IN4, LOW);\n    Serial.println(\"left\");\n  }\n//turn right\n void right(){\n    //Set the speed of the motor\n   analogWrite(ENA, 160);\n   analogWrite(ENB, 60);\n    //The right stop\n    digitalWrite(IN1, HIGH);\n    digitalWrite(IN2, LOW);\n  //The left forward\n    digitalWrite(IN3,LOW);\n    digitalWrite(IN4,LOW);\n     Serial.println(\"right\");\n  }\n//turn forward\n void forward(){\n    //FORWARD\n    //Set the speed of the motor\n     analogWrite(ENA, 130);\n     analogWrite(ENB, 130);\n     //The right forward\n     digitalWrite(IN1, HIGH);\n     digitalWrite(IN2,LOW);\n     //The left forward\n     digitalWrite(IN3, HIGH);\n     digitalWrite(IN4, LOW);\n     Serial.println(\"forward\");\n  }\n\n//stop\n void stop(){\n    analogWrite(ENA, 0);\n    analogWrite(ENB, 0);\n  //set IN1,IN2,IN3,IN4 to LOW\n    digitalWrite(IN1,LOW);\n    digitalWrite(IN2,LOW);\n    digitalWrite(IN3, LOW);\n    digitalWrite(IN4, LOW);\n     Serial.println(\"stop\");\n  \n  }\n  //back up\n   void back(){\n    //Set the speed of the motor    \n     analogWrite(ENA, 110);\n     analogWrite(ENB, 110);\n     //The right back\n     digitalWrite(IN1, LOW);\n     digitalWrite(IN2,HIGH);\n     //The left back\n     digitalWrite(IN3,LOW);\n     digitalWrite(IN4, HIGH);\n     Serial.println(\"back\");\n  }\n\n"}]}}Content-Length: 239
+
+{"jsonrpc":"2.0","id":"5","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"},"position":{"line":123,"character":47}}}
+<<<
+Content-Length: 40
+
+{"id":"5","jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 239
+
+{"jsonrpc":"2.0","id":"6","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server3804977976/sketch/2_follow.ino.cpp"},"position":{"line":123,"character":58}}}
+<<<
+Content-Length: 40
+
+{"id":"6","jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 60
+
+{"jsonrpc":"2.0","id":"7","method":"shutdown","params":null}
+<<<
+Content-Length: 40
+
+{"id":"7","jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}

@@ -1,0 +1,201 @@
+
+
+
+
+
+
+
+Started logging.
+
+>>>
+Content-Length: 3243
+
+{"jsonrpc":"2.0","id":"1","method":"initialize","params":{"processId":20320,"clientInfo":{"name":"vscode","version":"1.53.2"},"rootPath":"C:\\Users\\Administrator\\AppData\\Local\\Temp\\arduino-language-server1647350759\\sketch","rootUri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch","initializationOptions":{},"capabilities":{"workspace":{"applyEdit":true,"workspaceEdit":{"documentChanges":true,"resourceOperations":["create","rename","delete"],"failureHandling":"textOnlyTransactional"},"didChangeConfiguration":{"dynamicRegistration":true},"didChangeWatchedFiles":{"dynamicRegistration":true},"symbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]}},"executeCommand":{"dynamicRegistration":true},"workspaceFolders":true,"configuration":true},"textDocument":{"synchronization":{"dynamicRegistration":true,"willSave":true,"willSaveWaitUntil":true,"didSave":true},"completion":{"dynamicRegistration":true,"completionItem":{"snippetSupport":true,"commitCharactersSupport":true,"documentationFormat":["markdown","plaintext"],"deprecatedSupport":true,"preselectSupport":true,"tagSupport":{"valueSet":[1]}},"completionItemKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]},"contextSupport":true},"hover":{"dynamicRegistration":true,"contentFormat":["markdown","plaintext"]},"signatureHelp":{"dynamicRegistration":true,"signatureInformation":{"documentationFormat":["markdown","plaintext"],"parameterInformation":{"labelOffsetSupport":true}},"contextSupport":true},"declaration":{"dynamicRegistration":true,"linkSupport":true},"definition":{"dynamicRegistration":true,"linkSupport":true},"typeDefinition":{"dynamicRegistration":true,"linkSupport":true},"implementation":{"dynamicRegistration":true,"linkSupport":true},"references":{"dynamicRegistration":true},"documentHighlight":{"dynamicRegistration":true},"documentSymbol":{"dynamicRegistration":true,"symbolKind":{"valueSet":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},"hierarchicalDocumentSymbolSupport":true},"codeAction":{"dynamicRegistration":true,"codeActionLiteralSupport":{"codeActionKind":{"valueSet":["","quickfix","refactor","refactor.extract","refactor.inline","refactor.rewrite","source","source.organizeImports"]}},"isPreferredSupport":true},"codeLens":{"dynamicRegistration":true},"documentLink":{"dynamicRegistration":true,"tooltipSupport":true},"colorProvider":{"dynamicRegistration":true},"formatting":{"dynamicRegistration":true},"rangeFormatting":{"dynamicRegistration":true},"onTypeFormatting":{"dynamicRegistration":true},"rename":{"dynamicRegistration":true,"prepareSupport":true},"publishDiagnostics":{"relatedInformation":true,"tagSupport":{"valueSet":[1,2]}},"foldingRange":{"dynamicRegistration":true,"rangeLimit":5000,"lineFoldingOnly":true},"selectionRange":{"dynamicRegistration":true}},"window":{"workDoneProgress":true}},"trace":"off","workspaceFolders":[{"uri":"file:///g%3A/11.ZhiYi/5.Tutorial/1.tutorial/ZYC0043%EF%BC%89Four-way%20tracking%20and%20obstacle%20avoidance%20following%20car%20kit%20v2.0%20tutorial/ZYC0043/4_Arduino_Code/4_tracking","name":"4_tracking"}]}}
+<<<
+Content-Length: 1905
+
+{"id":"1","jsonrpc":"2.0","result":{"capabilities":{"astProvider":true,"callHierarchyProvider":true,"clangdInlayHintsProvider":true,"codeActionProvider":{"codeActionKinds":["quickfix","refactor","info"]},"compilationDatabase":{"automaticReload":true},"completionProvider":{"allCommitCharacters":[" ","\t","(",")","[","]","{","}","<",">",":",";",",","+","-","/","*","%","^","&","#","?",".","=","\"","'","|"],"resolveProvider":false,"triggerCharacters":[".","<",">",":","\"","/","*"]},"declarationProvider":true,"definitionProvider":true,"documentFormattingProvider":true,"documentHighlightProvider":true,"documentLinkProvider":{"resolveProvider":false},"documentOnTypeFormattingProvider":{"firstTriggerCharacter":"\n","moreTriggerCharacter":[]},"documentRangeFormattingProvider":true,"documentSymbolProvider":true,"executeCommandProvider":{"commands":["clangd.applyFix","clangd.applyTweak"]},"hoverProvider":true,"implementationProvider":true,"memoryUsageProvider":true,"referencesProvider":true,"renameProvider":{"prepareProvider":true},"selectionRangeProvider":true,"semanticTokensProvider":{"full":{"delta":true},"legend":{"tokenModifiers":["declaration","deprecated","deduced","readonly","static","abstract","virtual","dependentName","defaultLibrary","usedAsMutableReference","functionScope","classScope","fileScope","globalScope"],"tokenTypes":["variable","variable","parameter","function","method","function","property","variable","class","interface","enum","enumMember","type","type","unknown","namespace","typeParameter","concept","type","macro","comment"]},"range":false},"signatureHelpProvider":{"triggerCharacters":["(",")","{","}","<",">",","]},"textDocumentSync":{"change":2,"openClose":true,"save":true},"typeDefinitionProvider":true,"typeHierarchyProvider":true,"workspaceSymbolProvider":true},"serverInfo":{"name":"clangd","version":"clangd version 14.0.0 windows x86_64-pc-windows-msvc"}}}
+>>>
+Content-Length: 52
+
+{"jsonrpc":"2.0","method":"initialized","params":{}}Content-Length: 3558
+
+{"jsonrpc":"2.0","method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp","languageId":"cpp","version":1,"text":"#include \u003cArduino.h\u003e\n#line 1 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043\\\\4_Arduino_Code\\\\4_tracking\\\\4_tracking.ino\"\n/*************************************\n *     TIME:2022.06.25\n *     Development Team: Zhiyi Technology Co., Ltd.\n * \n *  **************************************/\n#define ENA 5\n#define ENB 6\n#define IN1 3\n#define IN2 4\n#define IN3 2\n#define IN4 7\n\nint Sensor1;\nint Sensor2;\nint Sensor3;\nint Sensor4;\n\n#line 18 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043\\\\4_Arduino_Code\\\\4_tracking\\\\4_tracking.ino\"\nvoid setup();\n#line 35 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043\\\\4_Arduino_Code\\\\4_tracking\\\\4_tracking.ino\"\nvoid loop();\n#line 18 \"G:\\\\11.ZhiYi\\\\5.Tutorial\\\\1.tutorial\\\\ZYC0043）Four-way tracking and obstacle avoidance following car kit v2.0 tutorial\\\\ZYC0043\\\\4_Arduino_Code\\\\4_tracking\\\\4_tracking.ino\"\nvoid setup() {\n\n  pinMode(ENA, OUTPUT);\n  pinMode(IN1, OUTPUT);\n  pinMode(IN2, OUTPUT);\n\n  pinMode(ENB, OUTPUT);\n  pinMode(IN3, OUTPUT);\n  pinMode(IN4, OUTPUT);\n\n  pinMode(8, INPUT);\n  pinMode(9, INPUT);\n  pinMode(10, INPUT);\n  pinMode(11, INPUT);\n  Serial.begin(9600);\n}\n\nvoid loop()\n{\n\n    Sensor1 = digitalRead(8);\n    Sensor2 = digitalRead(9);\n    Sensor3 = digitalRead(10);\n    Sensor4 = digitalRead(11);\n    \n    if ((Sensor4 == HIGH || Sensor3 == HIGH) \u0026\u0026 (Sensor2 == LOW || Sensor1 == LOW))\n    {\n        analogWrite(ENA, 150);\n        analogWrite(ENB, 150);\n\n        digitalWrite(IN1, LOW);\n        digitalWrite(IN2, HIGH);\n\n        digitalWrite(IN3, HIGH);\n        digitalWrite(IN4, LOW);\n        Serial.println(\"left\");\n    }\n    \n    else if((Sensor4 == LOW || Sensor3 == LOW) \u0026\u0026 (Sensor2 == HIGH || Sensor1 == HIGH))\n    {\n        analogWrite(ENA, 150);\n        analogWrite(ENB, 150);\n       \n        digitalWrite(IN1, HIGH);\n        digitalWrite(IN2, LOW);\n\n        digitalWrite(IN3,LOW );\n        digitalWrite(IN4, HIGH);\n        Serial.println(\"right\");\n    }\n\n    else  if(Sensor4 == LOW \u0026\u0026 Sensor3 == LOW \u0026\u0026 Sensor2 == LOW \u0026\u0026 Sensor1 == LOW)\n    {\n        analogWrite(ENA, 180);\n        analogWrite(ENB, 180);\n        //FORWARD\n        digitalWrite(IN1, HIGH);\n        digitalWrite(IN2, LOW);\n        digitalWrite(IN3, HIGH);\n        digitalWrite(IN4, LOW);\n        Serial.println(\"run\");\n    }\n    else  if((Sensor3 == HIGH || Sensor2 == HIGH ) \u0026\u0026 Sensor4 == LOW \u0026\u0026 Sensor1 == LOW)\n    {\n        analogWrite(ENA, 180);\n        analogWrite(ENB, 180);\n        //FORWARD\n        digitalWrite(IN1, HIGH);\n        digitalWrite(IN2,LOW);\n        digitalWrite(IN3, HIGH);\n        digitalWrite(IN4, LOW);\n        Serial.println(\"run\");\n    }\n    else\n    {\n        analogWrite(ENA, 0);\n        analogWrite(ENB, 0);\n        digitalWrite(IN1, LOW);\n        digitalWrite(IN2,LOW);\n        digitalWrite(IN3, LOW);\n        digitalWrite(IN4, LOW);\n    }     \n}\n\n"}}}
+<<<
+Content-Length: 188
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/.clangd"}}
+>>>
+Content-Length: 314
+
+{"jsonrpc":"2.0","id":"2","method":"textDocument/codeAction","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp"},"range":{"start":{"line":47,"character":30},"end":{"line":47,"character":30}},"context":{"diagnostics":[]}}}
+<<<
+Content-Length: 111
+
+{"id":0,"jsonrpc":"2.0","method":"window/workDoneProgress/create","params":{"token":"backgroundIndexProgress"}}
+>>>
+Content-Length: 38
+
+{"jsonrpc":"2.0","id":0,"result":null}
+<<<
+Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"begin","percentage":0,"title":"indexing"}}}Content-Length: 141
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/1","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"0/27","percentage":0}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"1/27","percentage":3}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 142
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"2/27","percentage":7}}}Content-Length: 218
+
+{"jsonrpc":"2.0","method":"textDocument/publishDiagnostics","params":{"diagnostics":[],"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp","version":1}}Content-Length: 38
+
+{"id":"2","jsonrpc":"2.0","result":[]}
+>>>
+Content-Length: 211
+
+{"jsonrpc":"2.0","id":"3","method":"textDocument/documentSymbol","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp"}}}
+<<<
+Content-Length: 1696
+
+{"id":"3","jsonrpc":"2.0","result":[{"detail":"int","kind":13,"name":"Sensor1","range":{"end":{"character":11,"line":14},"start":{"character":0,"line":14}},"selectionRange":{"end":{"character":11,"line":14},"start":{"character":4,"line":14}}},{"detail":"int","kind":13,"name":"Sensor2","range":{"end":{"character":11,"line":15},"start":{"character":0,"line":15}},"selectionRange":{"end":{"character":11,"line":15},"start":{"character":4,"line":15}}},{"detail":"int","kind":13,"name":"Sensor3","range":{"end":{"character":11,"line":16},"start":{"character":0,"line":16}},"selectionRange":{"end":{"character":11,"line":16},"start":{"character":4,"line":16}}},{"detail":"int","kind":13,"name":"Sensor4","range":{"end":{"character":11,"line":17},"start":{"character":0,"line":17}},"selectionRange":{"end":{"character":11,"line":17},"start":{"character":4,"line":17}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":12,"line":20},"start":{"character":0,"line":20}},"selectionRange":{"end":{"character":10,"line":20},"start":{"character":5,"line":20}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":11,"line":22},"start":{"character":0,"line":22}},"selectionRange":{"end":{"character":9,"line":22},"start":{"character":5,"line":22}}},{"detail":"void ()","kind":12,"name":"setup","range":{"end":{"character":1,"line":39},"start":{"character":0,"line":24}},"selectionRange":{"end":{"character":10,"line":24},"start":{"character":5,"line":24}}},{"detail":"void ()","kind":12,"name":"loop","range":{"end":{"character":1,"line":106},"start":{"character":0,"line":41}},"selectionRange":{"end":{"character":9,"line":41},"start":{"character":5,"line":41}}}]}
+>>>
+Content-Length: 240
+
+{"jsonrpc":"2.0","id":"4","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp"},"position":{"line":49,"character":43}}}
+<<<
+Content-Length: 213
+
+{"id":"4","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### macro `HIGH`  \n\n---\n```cpp\n#define HIGH 0x1\n```"},"range":{"end":{"character":43,"line":49},"start":{"character":39,"line":49}}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"3/27","percentage":11}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"4/27","percentage":14}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"5/27","percentage":18}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"6/27","percentage":22}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"7/27","percentage":25}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"8/27","percentage":29}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 143
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"9/27","percentage":33}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"10/27","percentage":37}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"11/27","percentage":40}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"12/27","percentage":44}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"13/27","percentage":48}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"14/27","percentage":51}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"15/27","percentage":55}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"16/27","percentage":59}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"17/27","percentage":62}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"18/27","percentage":66}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"19/27","percentage":70}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"20/27","percentage":74}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"21/27","percentage":77}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"22/27","percentage":81}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"23/27","percentage":85}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"24/27","percentage":88}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"25/27","percentage":92}}}Content-Length: 144
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"report","message":"26/27","percentage":96}}}Content-Length: 107
+
+{"jsonrpc":"2.0","method":"$/progress","params":{"token":"backgroundIndexProgress","value":{"kind":"end"}}}
+>>>
+Content-Length: 240
+
+{"jsonrpc":"2.0","id":"5","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp"},"position":{"line":49,"character":43}}}
+<<<
+Content-Length: 213
+
+{"id":"5","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### macro `HIGH`  \n\n---\n```cpp\n#define HIGH 0x1\n```"},"range":{"end":{"character":43,"line":49},"start":{"character":39,"line":49}}}}
+>>>
+Content-Length: 240
+
+{"jsonrpc":"2.0","id":"6","method":"textDocument/hover","params":{"textDocument":{"uri":"file:///C:/Users/Administrator/AppData/Local/Temp/arduino-language-server1647350759/sketch/4_tracking.ino.cpp"},"position":{"line":49,"character":34}}}
+<<<
+Content-Length: 236
+
+{"id":"6","jsonrpc":"2.0","result":{"contents":{"kind":"markdown","value":"### variable `Sensor3`  \n\n---\nType: `int`  \n\n---\n```cpp\nint Sensor3\n```"},"range":{"end":{"character":35,"line":49},"start":{"character":28,"line":49}}}}
+>>>
+Content-Length: 60
+
+{"jsonrpc":"2.0","id":"7","method":"shutdown","params":null}
+<<<
+Content-Length: 40
+
+{"id":"7","jsonrpc":"2.0","result":null}
+>>>
+Content-Length: 47
+
+{"jsonrpc":"2.0","method":"exit","params":null}
